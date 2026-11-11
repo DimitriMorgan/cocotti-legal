@@ -1,0 +1,73 @@
+:root {
+  --bg: #fff8ee;
+  --surface: #ffffff;
+  --ink: #2a1f1a;
+  --muted: #6b5a50;
+  --line: #efe2cf;
+  --tomato: #c93a24;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1512;
+    --surface: #2a211c;
+    --ink: #fbf1e4;
+    --muted: #c9b8ab;
+    --line: #3d3029;
+    --tomato: #e2553d;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font:
+    17px/1.65 system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+}
+main {
+  max-width: 60ch;
+  margin: 0 auto;
+  padding: 3rem 1rem 5rem;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin: 0 0 0.3rem;
+}
+h2 {
+  font-size: 1.2rem;
+  margin: 2.2rem 0 0.4rem;
+}
+.date,
+.note {
+  color: var(--muted);
+}
+a {
+  color: var(--tomato);
+}
+ul.cards {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+ul.cards a {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+ul.cards strong {
+  color: var(--tomato);
+  display: block;
+}
+.note {
+  font-size: 0.92rem;
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
